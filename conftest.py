@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import pytest
 
+# Добавляю возможность задавать язык браузера 
+# и проверять кликабельность элемента 
 def pytest_addoption(parser):
     parser.addoption('--language', action='store', default=None,
                      help="Choose language: en, fr, es, ru etc.")
